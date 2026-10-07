@@ -1,0 +1,8 @@
+{
+  "name": "Remix Rekenpret 1e Leerjaar",
+  "description": "Interactieve reken- en tel-oefeningen voor leerlingen van het 1e leerjaar, speciaal ontworpen voor Chromebooks met voorleesfunctie en helder lettertype.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

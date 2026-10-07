@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --active-font-main: 'Lexend', system-ui, -apple-system, sans-serif;
+    --active-font-title: 'Fredoka', cursive, sans-serif;
+  }
+
+  body.font-theme-lexend {
+    --active-font-main: 'Lexend', system-ui, -apple-system, sans-serif;
+    --active-font-title: 'Lexend', system-ui, -apple-system, sans-serif;
+  }
+
+  body.font-theme-fredoka {
+    --active-font-main: 'Fredoka', cursive, system-ui, sans-serif;
+    --active-font-title: 'Fredoka', cursive, system-ui, sans-serif;
+  }
+
+  body.font-theme-comic {
+    --active-font-main: 'Comic Neue', cursive, sans-serif;
+    --active-font-title: 'Comic Neue', cursive, sans-serif;
+  }
+
+  body {
+    font-family: var(--active-font-main);
+    -webkit-font-smoothing: antialiased;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: font-family 0.15s ease;
+  }
+}
+
+.font-display {
+  font-family: var(--active-font-title) !important;
+}
+
+.font-reading {
+  font-family: var(--active-font-main) !important;
+}
+
+.font-school {
+  font-family: 'Comic Neue', cursive, sans-serif !important;
+}
+
+/* Custom cheerful animations and button presses */
+.chromebook-btn {
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+.chromebook-btn:active {
+  transform: translateY(3px) scale(0.98);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #fef3c7;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb {
+  background: #f59e0b;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d97706;
+}
